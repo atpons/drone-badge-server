@@ -13,3 +13,4 @@
 
 config.toml
 *.png
+bazel-*
