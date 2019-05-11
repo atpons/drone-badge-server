@@ -1,0 +1,3 @@
+[Drone]
+token = "drone"
+host  = "https://example.com"
