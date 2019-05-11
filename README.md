@@ -3,13 +3,17 @@ Drone.io Badge Server
 
 Droneの各ステージにおける結果に基づいてバッジを返すサーバです．
 
+## 注意
+- Droneが複数台のときのことを考慮していません．
+- 取得した結果をインメモリDBに保存しています．
+
 ## API
 ### POST /generate
 ```json
 {
-  "build_number": 12, // ビルド番号
-  "repo_namespace": "atpons", // レポジトリの名前空間
-  "repo_name": "drone-badge-server" // レポジトリ名
+  "build_number": 12,
+  "repo_namespace": "atpons",
+  "repo_name": "drone-badge-server"
 }
 ```
 
