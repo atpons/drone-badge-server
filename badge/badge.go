@@ -7,7 +7,7 @@ type Stage map[int][]string
 type Repo map[int]Stage
 
 func ReturnImage(w http.ResponseWriter, r *http.Request, s Repo, repoId int, stageId int, status bool) {
-	w.Header().Set("Content-type", "image/png")
+	w.Header().Set("Content-type", "image/svg+xml")
 	var fileName string
 	if status {
 		fileName = s[repoId][stageId][0]
